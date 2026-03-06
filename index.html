@@ -1,6 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <title>EEC 172 Final Project</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EEC172 Final Project</title>
+  <style>
+    :root {
+      --bg: #f5f7fb;
+      --surface: #ffffff;
+      --text: #1f2937;
+      --muted: #6b7280;
+      --line: #dbe3ee;
+      --accent: #1d4ed8;
+      --accent-soft: #eaf1ff;
+      --shadow: 0 14px 40px rgba(15, 23, 42, 0.08);
+      --radius: 18px;
+      --max-width: 980px;
+    }
+
+    * { box-sizing: border-box; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: linear-gradient(180deg, #eef3fb 0%, #f8fafc 100%);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    .page {
+      width: min(calc(100% - 32px), var(--max-width));
+      margin: 0 auto;
+      padding: 40px 0 56px;
+    }
+
+    .hero {
+      background: rgba(255,255,255,0.78);
+      backdrop-filter: blur(8px);
+      border: 1px solid rgba(219, 227, 238, 0.9);
+      box-shadow: var(--shadow);
+      border-radius: 28px;
+      padding: 40px 32px;
+      text-align: center;
+      margin-bottom: 28px;
+    }
+
+    .eyebrow {
+      display: inline-block;
+      font-size: 0.82rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--accent);
+      background: var(--accent-soft);
+      padding: 8px 12px;
+      border-radius: 999px;
+      margin-bottom: 14px;
+      font-weight: 700;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: clamp(2rem, 4vw, 3.25rem);
+      letter-spacing: 0.03em;
+    }
+
+    .subtitle {
+      margin-top: 14px;
+      color: var(--muted);
+      font-size: 1.05rem;
+      font-weight: 500;
+    }
+
+    .hero-divider {
+      width: 92px;
+      height: 4px;
+      background: linear-gradient(90deg, transparent, var(--accent), transparent);
+      border-radius: 999px;
+      margin: 20px auto 0;
+    }
+
+    .section {
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      padding: 28px;
+      margin-bottom: 24px;
+    }
+
+    .section h2 {
+      margin: 0 0 16px;
+      font-size: 1.5rem;
+    }
+
+    .section p {
+      margin: 0;
+      color: #374151;
+    }
+
+    .project-image {
+      width: 100%;
+      display: block;
+      border-radius: 14px;
+      border: 1px solid var(--line);
+      object-fit: cover;
+      background: #f3f4f6;
+    }
+
+    .image-caption {
+      margin-top: 12px;
+      color: var(--muted);
+      font-size: 0.95rem;
+      text-align: center;
+    }
+
+    .placeholder-box {
+      min-height: 300px;
+      border: 2px dashed #b9c7dc;
+      border-radius: 16px;
+      background: linear-gradient(180deg, #f8fbff 0%, #f3f7fc 100%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 24px;
+      color: var(--muted);
+      font-size: 1rem;
+    }
+
+    .video-box {
+      aspect-ratio: 16 / 9;
+      min-height: auto;
+    }
+
+    footer {
+      text-align: center;
+      color: var(--muted);
+      font-size: 0.92rem;
+      padding-top: 6px;
+    }
+
+    @media (max-width: 640px) {
+      .page {
+        width: min(calc(100% - 20px), var(--max-width));
+        padding-top: 20px;
+      }
+
+      .hero,
+      .section {
+        padding: 22px 18px;
+      }
+    }
+  </style>
 </head>
 <body>
-    <p>Placeholder page for Oliver Lee-McKinney and Zicheng Huang's EEC 172 final project. This will be updated with project details later.</p>
+  <main class="page">
+    <section class="hero">
+      <div class="eyebrow">Course Project Website</div>
+      <h1>EEC172 Final Project</h1>
+      <div class="subtitle">Zicheng Huang &nbsp;|&nbsp; Oliver Lee-McKinney</div>
+      <div class="hero-divider"></div>
+    </section>
+
+    <section class="section">
+      <h2>Project Image</h2>
+      <img src="image.png" alt="Project placeholder image" class="project-image" />
+      <div class="image-caption">Replace <strong>image.png</strong> with a photo, diagram, or screenshot of your final project.</div>
+    </section>
+
+    <section class="section">
+      <h2>Project Description</h2>
+      <p>
+        [Project description placeholder] This section should contain a thorough description of the project,
+        including its motivation, objectives, hardware and software components, design decisions,
+        implementation details, and enough information for another student to understand and reproduce the work.
+        You can later replace this placeholder text with the same content as your written report.
+      </p>
+    </section>
+
+    <section class="section">
+      <h2>Project Demo</h2>
+      <div class="placeholder-box video-box">
+        <div>
+          <strong>Video Placeholder</strong><br />
+          Embed your final demonstration video here later.<br />
+          Example: YouTube embed, Google Drive video, or uploaded local video file.
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      EEC172 Final Project Webpage Template
+    </footer>
+  </main>
 </body>
+</html>
