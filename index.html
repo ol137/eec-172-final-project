@@ -166,29 +166,34 @@
 
     <section class="section">
       <h2>Project Image</h2>
-      <img src="image.png" alt="Project placeholder image" class="project-image" />
-      <div class="image-caption">Replace <strong>image.png</strong> with a photo, diagram, or screenshot of your final project.</div>
+      <img src="menu.png" alt="Project placeholder image" class="project-image" />
+      
+      
     </section>
 
     <section class="section">
       <h2>Project Description</h2>
       <p>
-        [Project description placeholder] This section should contain a thorough description of the project,
-        including its motivation, objectives, hardware and software components, design decisions,
-        implementation details, and enough information for another student to understand and reproduce the work.
-        You can later replace this placeholder text with the same content as your written report.
+        Our project is a wearable workout assistant that helps users maintain proper exercise form while tracking their workout progress. The device evaluates whether a user performs an exercise correctly and only advances progress through a set when the required form conditions are met. <br><br>
+The system is built around a CC3200 microcontroller and uses multiple sensors to monitor movement. An accelerometer tracks body posture, while an ultrasonic distance sensor measures motion such as push-up depth or stability during planks. The microcontroller processes this sensor data and provides real-time feedback through an OLED display and a buzzer. Users navigate the device’s menu using an infrared TV remote, allowing them to select workouts and view progress on the OLED screen. After completing a workout, the system uploads the session summary to AWS DynamoDB and automatically sends the results to the user via email. The device can also display basic statistics, such as the total calories burned over a week.<br><br>
+Overall, the system combines wearable sensing, embedded processing, and cloud connectivity to help users exercise with better form while keeping track of their fitness activity.
+
+
       </p>
     </section>
 
     <section class="section">
       <h2>Project Demo</h2>
-      <div class="placeholder-box video-box">
-        <div>
-          <strong>Video Placeholder</strong><br />
-          Embed your final demonstration video here later.<br />
-          Example: YouTube embed, Google Drive video, or uploaded local video file.
-        </div>
-      </div>
+    
+      <iframe
+      width="100%"
+      height="500"
+      src="https://www.youtube.com/embed/y4uIQ3L7WYg"
+      title="Project Demo"
+      frameborder="0"
+      allowfullscreen>
+    </iframe>
+    
     </section>
 
     <footer>
